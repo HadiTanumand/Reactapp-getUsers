@@ -10,9 +10,8 @@ class Users extends Component {
 
    async componentDidMount(){
     const response =await axios.get('https://reqres.in/api/users');
-    setTimeout(() => {
       this.setState({users:response.data.data , isLoading:false})
-    }, 3000);
+ 
    }
 
   render() { 
